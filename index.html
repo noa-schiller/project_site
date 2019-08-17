@@ -41,7 +41,7 @@
         <div class="menu-logo">
             <div class="navbar-brand">
                 <span class="navbar-logo">
-                    <a href="https://mobirise.co">
+                    <a href="#top">
                         <img src="assets/images/project-logo-on-website-gray-122x122.jpg" alt="Mobirise" title="" style="height: 4.4rem;">
                     </a>
                 </span>
@@ -55,17 +55,17 @@
                         Goals</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="index.html#content4-1n">
                         Methodology</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="index.html#content4-1p">Achievements</a></li>
                 <li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="index.html#content4-28">
+                    <a class="nav-link link text-white display-4" href="index.html#team1-2d">
                         Team</a>
                 </li></ul>
-            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-primary display-4" href="index.html#header16-0" target="_blank"><span class="mbrib-edit mbr-iconfont mbr-iconfont-btn"></span>
+            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-white-outline display-5" href="assets/files/presentation.pptx" target="_blank"><span class="mbrib-edit mbr-iconfont mbr-iconfont-btn"></span>
                     
                     Final presentation</a></div>
         </div>
     </nav>
 </section>
 
-<section class="engine"><a href="https://mobirise.info/y">html site templates</a></section><section class="header1 cid-rvaZ9TYi9R mbr-fullscreen mbr-parallax-background" id="header16-0">
+<section class="engine"><a href="https://mobirise.info/n">free simple web templates</a></section><section class="header1 cid-rvaZ9TYi9R mbr-fullscreen mbr-parallax-background" id="header16-0">
 
     
 
@@ -108,7 +108,10 @@
 
     <div class="container">
         <div class="media-container-row">
-            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-10"><p>Shutterfly provides their customers with the ability to create custom products using their own photos (photo albums, mugs, stationary, etc.).</p><p>When their users upload vacation photos, they are interested in knowing the location in which the photos were taken, in order to provide custom designs for famous sites. Not all of the photos come with geolocation information, so they need the ability to recognize famous landmarks from pixels alone<span style="font-size: 1.2rem;">.</span></p><p>This project provides an exploration of a deep learning solution to this problem.</p><p><br></p></div>
+            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-10"><p>Recognizing images of landmarks from pixels alone is an existing problem in machine learning, and is constantly being approached using different solutions.   
+</p><p>This project provides an exploration of a deep learning solution to this problem.
+</p><p>The project was hosted by Shutterfly in collaboration with the Technion under "Industrial Project" course.
+</p></div>
         </div>
     </div>
 </section>
@@ -157,7 +160,7 @@
                     <div class="card-box">
                         <h4 class="card-title py-3 mbr-fonts-style display-7">
                             Find existing dataset</h4>
-                        <p class="mbr-text mbr-fonts-style display-5">Search the web for a dataset that will resemble the images shutterfly users upload</p>
+                        <p class="mbr-text mbr-fonts-style display-5">Search the web for a dataset that suits our specific problem</p>
                     </div>
                 </div>
             </div>
@@ -221,7 +224,7 @@
                         <span class="mbr-iconfont socicon-google socicon" style="font-size: 50px;"></span>
                     </div>
                     <div class="card-box">
-                        <h4 class="card-title py-3 mbr-fonts-style display-7"><a href="https://www.kaggle.com/google/google-landmarks-dataset">Google Landmarks Dataset from kaggle</a></h4>
+                        <h4 class="card-title py-3 mbr-fonts-style display-7"><a href="https://www.kaggle.com/google/google-landmarks-dataset" target="_blank">Google Landmarks Dataset from kaggle</a></h4>
                         
                     </div>
                 </div>
@@ -266,7 +269,7 @@
                 <div class="media-container-row">
                     <div class="media-content">
                         <div class="mbr-section-text">
-                            <p class="mbr-text align-right mb-0 mbr-fonts-style display-7">In order to better understand the specific challenges of this problem, we started from smaller problems and gradually moved on to bigger ones. At each stage we created custom datasets containing different amounts of landmarks, starting from 1 landmark and ending up with 1K landmarks.<br><br>We trained models using existing CNN architectures pretrained on the ImageNet dataset, at this point classifying single images.<br><br> After gaining insights from the smaller problems we focused on the 1K landmarks dataset and tested the current solution limitations.<br><br></p>
+                            <p class="mbr-text align-right mb-0 mbr-fonts-style display-7">In order to better understand the specific challenges of this problem, we started from smaller problems and gradually moved on to bigger ones. At each stage we created custom datasets containing different amounts of landmarks, starting from 1 landmark and ending up with 1K landmarks.<br>We trained models using existing CNN architectures pretrained on the ImageNet dataset, at this point classifying single images.<br><br> After gaining insights from the smaller problems we focused on the 1K landmarks dataset and tested the current solution limitations.<br><br></p>
                         </div>
                     </div>
                     <div class="mbr-figure" style="width: 40%;">
@@ -288,7 +291,7 @@
                 <div class="media-container-row">
                     <div class="media-content">
                         <div class="mbr-section-text">
-                            <p class="mbr-text align-right mb-0 mbr-fonts-style display-7">Shutterfly users usually uploads several images from the same vacation, we tried to take advantage of this and classify sequences of images instead of one image at a time.<br><br>We combined our trained CNN with LSTM (recurrent neural network capable of learning long-term dependencies) to create a new model. The input to this model is a sequence of images that are known to be from the same class, and the output is the predicted class.<br><br></p>
+                            <p class="mbr-text align-right mb-0 mbr-fonts-style display-7">Being satisfied with the initial results, we continued to explore a different approach. Understanding that in many of the cases landmark recognition is required it is very likely a number of photos are provided for the same location. We tried to take advantage of this and classify sequences of images instead of one image at a time.<br><br>We combined our trained CNN with LSTM (recurrent neural network capable of learning long-term dependencies) to create a new model. The input to this model is a sequence of images that are known to be from the same class, and the output is the predicted class.<br><br></p>
                         </div>
                     </div>
                     <div class="mbr-figure" style="width: 75%;">
@@ -324,25 +327,89 @@
         <div class="media-container-row">
             <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
                 <ul>
-                    <li>We found that the landmark recognition problem is approachable using deep learning and CNN in particular</li><li>We provided insights that can be used in classifying real-life images of Shutterfly's users</li><li><strong>Our final LSTM approach boosted the original CNN accuracy by 10%</strong>,<br>and proved to be more accurate than a simple majority vote baseline</li>
+                    <li>We found that the landmark recognition problem is approachable using deep learning and CNN in particular</li><li>We provided insights that can be used in future projects</li><li><strong>Our final LSTM approach boosted the original CNN accuracy by 10%</strong>,<br>and proved to be more accurate than a simple majority vote baseline</li>
                 </ul>
             </div>
         </div>
     </div>
 </section>
 
-<section class="mbr-section content4 cid-rvsCkhXHsy" id="content4-28">
-
+<section class="team1 cid-rwbD7uKSkx" id="team1-2d">
     
-
-    <div class="container">
-        <div class="media-container-row">
-            <div class="title col-12 col-md-8">
-                <h2 class="align-center pb-3 mbr-fonts-style display-1"><strong>Our Team</strong></h2>
-                
-                
-            </div>
-        </div>
+    
+    
+    <div class="container align-center">
+        
+        
+        <div class="row media-row">
+            
+        <div class="team-item col-lg-3 col-md-6">
+                <div class="item-image">
+                    <img src="assets/images/guy-site2-1-510x608.jpg" alt="" title="">
+                </div>
+                <div class="item-caption py-3">
+                    <div class="item-name px-2">
+                        <p class="mbr-fonts-style display-5"><strong>
+                           Guy Shellem</strong></p>
+                    </div>
+                    <div class="item-role px-2">
+                        <p>Computer Science student at the Technion</p>
+                    </div>
+                    <div class="item-social pt-2">
+                        <a href="mailto:guyshellem@gmail.com">
+                            <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-mail socicon"></span>
+                        </a>
+                        <a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
+                            
+                        </a>
+                        <a href="https://plus.google.com/u/0/+Mobirise" target="_blank">
+                            
+                        </a>
+                        <a href="https://www.linkedin.com/in/mobirise" target="_blank">
+                            
+                        </a>
+                        <a href="https://www.instagram.com/mobirise/" target="_blank">
+                            
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCt_tncVAetpK5JeM8L-8jyw" target="_blank">    
+                            
+                        </a>
+                    </div>
+                </div>
+            </div><div class="team-item col-lg-3 col-md-6">
+                <div class="item-image">
+                    <img src="assets/images/noa-site2-510x608.jpg" alt="" title="">
+                </div>
+                <div class="item-caption py-3">
+                    <div class="item-name px-2">
+                        <p class="mbr-fonts-style display-5"><strong>
+                           Noa Schiller</strong></p>
+                    </div>
+                    <div class="item-role px-2">
+                        <p>Computer Science student at the Technion</p>
+                    </div>
+                    <div class="item-social pt-2">
+                        <a href="mailto:noasch6178@gmail.com">
+                            <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-mail socicon"></span>
+                        </a>
+                        <a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
+                            
+                        </a>
+                        <a href="https://plus.google.com/u/0/+Mobirise" target="_blank">
+                            
+                        </a>
+                        <a href="https://www.linkedin.com/in/mobirise" target="_blank">
+                            
+                        </a>
+                        <a href="https://www.instagram.com/mobirise/" target="_blank">
+                            
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCt_tncVAetpK5JeM8L-8jyw" target="_blank">    
+                            
+                        </a>
+                    </div>
+                </div>
+            </div></div>    
     </div>
 </section>
 
@@ -357,23 +424,14 @@
                 <div class="card-wrapper media-container-row media-container-row">
                     <div class="card-box">
                         <h4 class="card-title pb-3 mbr-fonts-style display-4"><strong>
-                            Students</strong></h4>
-                        <p class="mbr-text mbr-fonts-style display-7">Noa Schiller and Guy shellem<br>Computer Sience students at the Technion</p>
+                            supervisors</strong></h4>
+                        <p class="mbr-text mbr-fonts-style display-5">Ron Maurer, Nir Aides and Nitsan Pri-Hadash 
+<br>from Shutterfly</p>
                     </div>
                 </div>
             </div>
 
-            <div class="card p-3 col-12 col-md-6 col-12 col-md-6">
-                <div class="card-wrapper media-container-row">
-                    <div class="card-box">
-                        <h4 class="card-title pb-3 mbr-fonts-style display-4"><strong>
-                            supervisors
-                        </strong></h4>
-                        <p class="mbr-text mbr-fonts-style display-7">
-                            Ron Maurer, Nir Aides and Nitsan Pri-Hadash <br>from Shutterfly<br></p>
-                    </div>
-                </div>
-            </div>
+            
 
             
 
